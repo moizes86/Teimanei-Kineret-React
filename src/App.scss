@@ -1,0 +1,23 @@
+$headersMainColor: #cca146;
+$headersFontFamily: "Secular One", Tahoma, sans-serif;
+body {
+    text-align: right;
+    background-color: #F0F8FF;
+    color: #000099;
+    font-family: Tahoma;
+    // font-size: 16px;
+    direction: rtl;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    height: 98.7%;
+
+    .page-container{
+        border: 1px solid rgb(197, 201, 105);
+        border-radius: 0.2rem;
+    }
+
+    hr {
+        width: 25%;
+    }
+}
