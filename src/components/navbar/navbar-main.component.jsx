@@ -12,7 +12,11 @@ function NavbarMain() {
           <Navbar.Brand>
             <Link to="/">ראשי</Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <div className="hamburgerIcon "></div>
+          <div className="hamburgerIcon"></div>
+          <div className="hamburgerIcon"></div>
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <Nav.Item>

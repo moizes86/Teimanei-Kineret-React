@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .navbar {
   background-color: #232323;
   font-size: 1rem;
@@ -29,17 +31,18 @@
   }
 
   .navbar-brand {
-    a{
+    a {
       margin-left: 0.5rem;
       color: white;
       text-decoration: none;
     }
   }
 
-  .navbar-brand:hover {
-    color: white;
-    opacity: 0.7;
-    transition: 0.2s;
+  .hamburgerIcon {
+    width: 28px;
+    height: 4px;
+    margin: 6px 0;
+    background-image: radial-gradient(#cca246c4, $headersMainColor);
+    border-radius: 2px;
   }
 }
-
