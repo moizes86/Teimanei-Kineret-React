@@ -5,7 +5,7 @@ export default function ArticlesTopics({ articlesArr }) {
   return (
     <ul>
       {articlesArr.map(({ id, ...otherProps }) => (
-        <li key={id} className="my-3">
+        <li key={id} className="my-3 pl-3">
           <Link key={id} to={otherProps.linkUrl}>
             {otherProps.title}
             <br />

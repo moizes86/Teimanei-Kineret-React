@@ -1,4 +1,10 @@
 .photos {
+
+  .photos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   img {
     padding: 1px;
     transition: 0.3s;

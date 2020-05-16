@@ -22,7 +22,7 @@ export default function Photos() {
   let { path } = useRouteMatch();
 
   return (
-    <div className=" photos">
+    <div className="photos ">
 
     {/** Page title is a link so going back to Topics is easier */}
       <Link to={pageTitleLink}>
@@ -39,7 +39,7 @@ export default function Photos() {
         <Route path={`${path}/:topicId`}>
         {/**LightBox Wrapper */}
           <SRLWrapper>
-            <div className="container row p-md-2">
+            <div className=" photos-container">
               <PhotosByTopic />
             </div>
           </SRLWrapper>

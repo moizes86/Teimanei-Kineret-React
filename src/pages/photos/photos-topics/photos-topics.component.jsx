@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
+import './photos-topics.styles.scss';
+
  function PhotosTopics() {
     let {  url } = useRouteMatch();
 
@@ -28,9 +30,9 @@ import { Link, useRouteMatch } from "react-router-dom";
     return (
       <div className="gallery d-flex row p-3 ">
         {linksArray.map(link => (
-          <div key={link.id} className="col-md-4 my-4">
-            <Link to={`${url}/${link.nestedURL}`}>
-              <img alt="" src={link.src} className="img-fluid" />
+          <div key={link.id} className="col-md-4 my-4 image-container">
+            <Link to={`${url}/${link.nestedURL}`} className="">
+              <img alt="" src={link.src} className="img-fluid " />
             </Link>
             <p className="text-center p-2">{link.title}</p>
           </div>
